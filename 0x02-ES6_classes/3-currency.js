@@ -14,14 +14,14 @@
 //       this.length = length;
 //       this.students = students;
 //     }
-  
+
 //     /**
 //      * Gets the name of this course.
 //      */
 //     get name() {
 //       return this._name;
 //     }
-  
+
 //     /**
 //      * Sets the name of this course.
 //      */
@@ -31,14 +31,14 @@
 //       }
 //       this._name = value;
 //     }
-  
+
 //     /**
 //      * Gets the length of this course (in months).
 //      */
 //     get length() {
 //       return this._length;
 //     }
-  
+
 //     /**
 //      * Sets the length of this course (in months).
 //      */
@@ -48,14 +48,14 @@
 //       }
 //       this._length = value;
 //     }
-  
+
 //     /**
 //      * Gets the names of students in this course.
 //      */
 //     get students() {
 //       return this._students;
 //     }
-  
+
 //     /**
 //      * Sets the names of students in this course.
 //      */
@@ -70,32 +70,37 @@
 //     }
 //   }
 
-  export default class Currency {
-    constructor(code, name) {
-      this._code = code
-      this._name = name
-    }
-    /*
+export default class Currency {
+  constructor(code, name) {
+    this._code = code;
+    this._name = name;
+  }
+
+  /*
       getter for code
     */
-    get code() {
-      return this._code;
-    }
-    /* setter for code*/
-    set code(value) {
-      this._code = value;
-    }
-    /*
+  get code() {
+    return this._code;
+  }
+
+  /* setter for code */
+  set code(value) {
+    this._code = value;
+  }
+
+  /*
       getter for name
     */
-      get name() {
-        return this._name;
-      }
-      /* setter for code*/
-      set name(value) {
-        this._name = value;
-      }
-      displayFullCurrency() {
-        return `${this.name} (${this.code})`
-      }
+  get name() {
+    return this._name;
   }
+
+  /* setter for code */
+  set name(value) {
+    this._name = value;
+  }
+
+  displayFullCurrency() {
+    return `${this.name} (${this.code})`;
+  }
+}
