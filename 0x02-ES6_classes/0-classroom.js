@@ -3,7 +3,7 @@
  */
 export default class ClassRoom {
   /**
-     * Creates a new @see {@link ClassRoom}.
+     * Creates a new ClassRoom.
      * @param {Number} maxStudentsSize - The maximum number of
      * students in the class.
      */
