@@ -1,8 +1,8 @@
 // Create a function getListStudentIds that returns an array of ids from a list of object.
 
 export default function getListStudentsIds(arr) {
-  if (arr.constructor !== Array) {
-    return [];
+  if (arr.constructor === Array) {
+    return arr.map((arr) => arr.id);
   }
-  return arr.map((arr) => arr.id);
+  return [];
 }
